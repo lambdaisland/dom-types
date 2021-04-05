@@ -1,0 +1,4 @@
+{:paths ["src"]
+ :deps  {applied-science/js-interop          {:mvn/version "0.2.7"}
+         camel-snake-kebab/camel-snake-kebab {:mvn/version "0.4.2"}
+         lambdaisland/data-printers          {:mvn/version "0.0.22"}}}
