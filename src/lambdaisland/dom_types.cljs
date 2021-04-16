@@ -33,25 +33,24 @@
 
 (register-printer js/Text js/Text #(.-data %))
 
-(register-printer
- js/Element
- 'js/Element (fn hiccupize [^js e]
-               (cond
-                 (string? e)
-                 e
-                 (instance? js/Text e)
-                 (.-data e)
-                 :else
-                 (let [el [(keyword (str/lower-case (.-tagName e)))]]
-                   (into (if-let [attrs (seq (.getAttributeNames e))]
-                           (conj el (into {}
-                                          (map (juxt csk/->kebab-case-keyword
-                                                     #(truncate-attr (.getAttribute e %))))
-                                          attrs))
-                           el)
-                         (map hiccupize)
-                         (.-childNodes e))))))
+(defn hiccupize [^js e]
+  (cond
+    (string? e) e
+    (instance? js/Text e) (.-data e)
+    :else
+    (let [el [(keyword (str/lower-case (.-tagName e)))]]
+      (into (if-let [attrs (seq (.getAttributeNames e))]
+              (conj el (into {}
+                             (map (juxt csk/->kebab-case-keyword
+                                        #(truncate-attr (.getAttribute e %))))
+                             attrs))
+              el)
+            (map hiccupize)
+            (.-childNodes e)))))
 
+(register-printer js/Text js/Text #(.-data %))
+(register-printer js/Element 'js/Element hiccupize)
+(register-printer js/DocumentFragment 'js/DocumentFragment #(map hiccupize (.-children %)))
 (register-printer js/HTMLDocument 'js/HTMLDocument (fn [^js d] {:root (.-documentElement d)}))
 (register-printer js/XMLDocument 'js/XMLDocument (fn [^js d] {:root (.-documentElement d)}))
 (register-printer js/Document 'js/Document (fn [^js d] {:root (.-documentElement d)}))
