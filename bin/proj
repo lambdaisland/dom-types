@@ -1,0 +1,15 @@
+#!bin/bb
+
+(ns proj
+  (:require [clojure.java.shell :as sh]
+            [lioss.main :as lioss]
+            [lioss.shellutil :as shellutil]))
+
+(lioss/main
+ {:license        :mpl
+  :inception-year 2021
+  :description    "Print handlers and datafy/nav for built-in browser types"})
+
+;; Local Variables:
+;; mode:clojure
+;; End:
