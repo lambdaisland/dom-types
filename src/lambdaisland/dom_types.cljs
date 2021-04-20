@@ -31,8 +31,6 @@
     (str (subs attr-val 0 *max-attr-length*) "...")
     attr-val))
 
-(register-printer js/Text js/Text #(.-data %))
-
 (defn hiccupize [^js e]
   (cond
     (string? e) e
@@ -55,18 +53,12 @@
 (register-printer js/XMLDocument 'js/XMLDocument (fn [^js d] {:root (.-documentElement d)}))
 (register-printer js/Document 'js/Document (fn [^js d] {:root (.-documentElement d)}))
 
-(extend-type js/Node
-  ITransientCollection
-  (-conj! [^js this child]
-    (.appendChild this child)))
-
 (register-keys-printer js/Window 'js/Window [:location :document :devicePixelRatio :innerWidth :innerHeight])
 
 (register-printer js/Location 'js/Location str)
 
 (register-printer js/HTMLCollection 'js/HTMLCollection #(into [] %))
 (register-printer js/NodeList 'js/NodeList #(into [] %))
-
 
 (when (exists? js/KeyboardEvent)
   (register-keys-printer js/KeyboardEvent 'js/KeyboardEvent [:type :code :key :ctrlKey :altKey :metaKey :shiftKey :isComposing :location :repeat]))

@@ -8,6 +8,31 @@ Print handlers and datafy/nav for built-in browser types
 
 ## Features
 
+Include `lambdaisland.dom-types` in your ClojureScript build to get print and pprint handlers for various built-in types. This way instead of printing `#object[HTMLElement]` you'll get `#js/Element [:div "hello"]`.
+
+These are currently implemented:
+
+- Text
+- Element
+- DocumentFragment
+- HTMLDocument
+- XMLDocument
+- Document
+- Window
+- Location
+- HTMLCollection
+- NodeList
+- KeyboardEvent
+- TouchEvent
+- Touch
+- TouchList
+- PointerEvent
+- MouseEvent
+- WheelEvent
+- DragEvent
+
+This project is a [stamp collection](https://twitter.com/plexus/status/1372179545139335170). Being exhaustive is not a stated goal, but pull requests that add other common built-in types are welcome.
+
 <!-- installation -->
 ## Installation
 
