@@ -74,10 +74,7 @@
 (when (exists? js/TouchEvent)
   (register-keys-printer js/TouchEvent 'js/TouchEvent [:altKey :changedTouches :ctrlKey :metaKey :shiftKey :targetTouches :touches])
   (register-keys-printer js/Touch 'js/Touch [:identifier :screenX :screenY :clientX :clientY :pageX :pageY :target])
-  (register-printer js/TouchList 'js/TouchList (comp vec seq))
-  (lookupify js/TouchEvent)
-  (lookupify js/Touch)
-  (lookupify js/TouchList))
+  (register-printer js/TouchList 'js/TouchList (comp vec seq)))
 
 (register-keys-printer js/PointerEvent 'js/PointerEvent [:pointerId :width :height :pressure
                                                          :tangentialPressure :tiltX :tiltY
