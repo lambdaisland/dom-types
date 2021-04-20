@@ -14,13 +14,13 @@ Print handlers and datafy/nav for built-in browser types
 To use the latest release, add the following to your `deps.edn` ([Clojure CLI](https://clojure.org/guides/deps_and_cli))
 
 ```
-lambdaisland/dom-types {:mvn/version "0.0.0"}
+lambdaisland/dom-types {:mvn/version "0.0.7"}
 ```
 
 or add the following to your `project.clj` ([Leiningen](https://leiningen.org/))
 
 ```
-[lambdaisland/dom-types "0.0.0"]
+[lambdaisland/dom-types "0.0.7"]
 ```
 <!-- /installation -->
 
