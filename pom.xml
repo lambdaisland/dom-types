@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemalocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>lambdaisland</groupId>
+  <groupId>com.lambdaisland</groupId>
   <artifactId>dom-types</artifactId>
-  <version>0.0.7</version>
+  <version>0.0.11</version>
   <name>dom-types</name>
   <description>Print handlers and datafy/nav for built-in browser types</description>
   <url>https://github.com/lambdaisland/dom-types</url>
@@ -22,7 +22,7 @@
     <url>https://github.com/lambdaisland/dom-types</url>
     <connection>scm:git:git://github.com/lambdaisland/dom-types.git</connection>
     <developerConnection>scm:git:ssh://git@github.com/lambdaisland/dom-types.git</developerConnection>
-    <tag>f870803ce421bfd0b8d0718b2070204a0646269e</tag>
+    <tag>3ea6142fa86e6eb0aa953ed9d25e6ed2107febeb</tag>
   </scm>
   <dependencies>
     <dependency>
@@ -61,7 +61,7 @@
         <configuration>
           <archive>
             <manifestEntries>
-              <git-revision>f870803ce421bfd0b8d0718b2070204a0646269e</git-revision>
+              <git-revision>3ea6142fa86e6eb0aa953ed9d25e6ed2107febeb</git-revision>
             </manifestEntries>
           </archive>
         </configuration>
