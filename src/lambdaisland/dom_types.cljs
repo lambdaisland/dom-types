@@ -64,15 +64,15 @@
   (register-keys-printer js/KeyboardEvent 'js/KeyboardEvent [:type :code :key :ctrlKey :altKey :metaKey :shiftKey :isComposing :location :repeat]))
 
 (when (exists? js/TouchEvent)
-  (register-keys-printer js/TouchEvent 'js/TouchEvent [:altKey :changedTouches :ctrlKey :metaKey :shiftKey :targetTouches :touches])
+  (register-keys-printer js/TouchEvent 'js/TouchEvent [:type :altKey :changedTouches :ctrlKey :metaKey :shiftKey :targetTouches :touches])
   (register-keys-printer js/Touch 'js/Touch [:identifier :screenX :screenY :clientX :clientY :pageX :pageY :target])
   (register-printer js/TouchList 'js/TouchList (comp vec seq)))
 
-(register-keys-printer js/PointerEvent 'js/PointerEvent [:pointerId :width :height :pressure
+(register-keys-printer js/PointerEvent 'js/PointerEvent [:type :pointerId :width :height :pressure
                                                          :tangentialPressure :tiltX :tiltY
                                                          :twist :pointerType :isPrimary])
 
-(def mouse-event-keys [:altKey :button :buttons :clientX :clientY :ctrlKey :metaKey :movementX :movementY
+(def mouse-event-keys [:type :altKey :button :buttons :clientX :clientY :ctrlKey :metaKey :movementX :movementY
                        ;; "These are experimental APIs that should not be used in production code" -- MDN
                        ;; :offsetX :offsetY :pageX :pageY
                        :region :relatedTarget :screenX :screenY :shiftKey])
