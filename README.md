@@ -1,7 +1,7 @@
 # dom-types
 
 <!-- badges -->
-[![cljdoc badge](https://cljdoc.org/badge/lambdaisland/dom-types)](https://cljdoc.org/d/lambdaisland/dom-types) [![Clojars Project](https://img.shields.io/clojars/v/lambdaisland/dom-types.svg)](https://clojars.org/lambdaisland/dom-types)
+[![cljdoc badge](https://cljdoc.org/badge/com.lambdaisland/dom-types)](https://cljdoc.org/d/com.lambdaisland/dom-types) [![Clojars Project](https://img.shields.io/clojars/v/com.lambdaisland/dom-types.svg)](https://clojars.org/com.lambdaisland/dom-types)
 <!-- /badges -->
 
 Print handlers and datafy/nav for built-in browser types
@@ -39,13 +39,13 @@ This project is a [stamp collection](https://twitter.com/plexus/status/137217954
 To use the latest release, add the following to your `deps.edn` ([Clojure CLI](https://clojure.org/guides/deps_and_cli))
 
 ```
-lambdaisland/dom-types {:mvn/version "0.0.0"}
+com.lambdaisland/dom-types {:mvn/version "0.0.11"}
 ```
 
 or add the following to your `project.clj` ([Leiningen](https://leiningen.org/))
 
 ```
-[lambdaisland/dom-types "0.0.0"]
+[com.lambdaisland/dom-types "0.0.11"]
 ```
 <!-- /installation -->
 
