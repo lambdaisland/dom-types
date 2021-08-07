@@ -46,7 +46,7 @@
             (map hiccupize)
             (.-childNodes e)))))
 
-(register-printer js/Text js/Text #(.-data %))
+(register-printer js/Text 'js/Text #(.-data %))
 (register-printer js/Element 'js/Element hiccupize)
 (register-printer js/DocumentFragment 'js/DocumentFragment #(map hiccupize (.-children %)))
 (register-printer js/HTMLDocument 'js/HTMLDocument (fn [^js d] {:root (.-documentElement d)}))
