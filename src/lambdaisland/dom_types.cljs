@@ -36,15 +36,16 @@
     (string? e) e
     (instance? js/Text e) (.-data e)
     :else
-    (let [el [(keyword (str/lower-case (.-tagName e)))]]
-      (into (if-let [attrs (seq (.getAttributeNames e))]
-              (conj el (into {}
-                             (map (juxt csk/->kebab-case-keyword
-                                        #(truncate-attr (.getAttribute e %))))
-                             attrs))
-              el)
-            (map hiccupize)
-            (.-childNodes e)))))
+    (when-let [tag-name (.-tagName e)]
+      (let [el [(keyword (str/lower-case tag-name))]]
+        (into (if-let [attrs (seq (.getAttributeNames e))]
+                (conj el (into {}
+                               (map (juxt csk/->kebab-case-keyword
+                                          #(truncate-attr (.getAttribute e %))))
+                               attrs))
+                el)
+              (keep hiccupize)
+              (.-childNodes e))))))
 
 (register-printer js/Text 'js/Text #(.-data %))
 (register-printer js/Element 'js/Element hiccupize)
