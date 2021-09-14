@@ -1,4 +1,4 @@
-#!bin/bb
+#!/usr/bin/env bb
 
 (ns proj
   (:require [clojure.java.shell :as sh]
@@ -8,7 +8,8 @@
 (lioss/main
  {:license        :mpl
   :inception-year 2021
-  :description    "Print handlers and datafy/nav for built-in browser types"})
+  :description    "Print handlers and datafy/nav for built-in browser types"
+  :group-id       "com.lambdaisland"})
 
 ;; Local Variables:
 ;; mode:clojure
