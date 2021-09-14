@@ -1,12 +1,8 @@
 # Unreleased
 
-## Added
-
 ## Fixed
 
 - Fixed printing DOM elements without a tag name.
-
-## Changed
 
 # 0.0.19 (2021-08-09 / 293e461)
 
