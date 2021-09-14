@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.lambdaisland</groupId>
   <artifactId>dom-types</artifactId>
-  <version>0.0.19</version>
+  <version>0.0.26</version>
   <name>dom-types</name>
   <description>Print handlers and datafy/nav for built-in browser types</description>
   <url>https://github.com/lambdaisland/dom-types</url>
@@ -22,7 +22,7 @@
     <url>https://github.com/lambdaisland/dom-types</url>
     <connection>scm:git:git://github.com/lambdaisland/dom-types.git</connection>
     <developerConnection>scm:git:ssh://git@github.com/lambdaisland/dom-types.git</developerConnection>
-    <tag>b762b047f9a38ba5a4e86cc64de6c0eb286fc7bf</tag>
+    <tag>e68c4a5c5503d005b120ac1b401b21ae24f88088</tag>
   </scm>
   <dependencies>
     <dependency>
@@ -61,7 +61,7 @@
         <configuration>
           <archive>
             <manifestEntries>
-              <git-revision>b762b047f9a38ba5a4e86cc64de6c0eb286fc7bf</git-revision>
+              <git-revision>e68c4a5c5503d005b120ac1b401b21ae24f88088</git-revision>
             </manifestEntries>
           </archive>
         </configuration>
