@@ -2,6 +2,8 @@
 
 ## Added
 
+- Add printers for Blob and File.
+
 ## Fixed
 
 ## Changed
