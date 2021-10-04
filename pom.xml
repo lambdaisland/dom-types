@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.lambdaisland</groupId>
   <artifactId>dom-types</artifactId>
-  <version>0.0.26</version>
+  <version>0.4.29</version>
   <name>dom-types</name>
   <description>Print handlers and datafy/nav for built-in browser types</description>
   <url>https://github.com/lambdaisland/dom-types</url>
@@ -22,13 +22,13 @@
     <url>https://github.com/lambdaisland/dom-types</url>
     <connection>scm:git:git://github.com/lambdaisland/dom-types.git</connection>
     <developerConnection>scm:git:ssh://git@github.com/lambdaisland/dom-types.git</developerConnection>
-    <tag>e68c4a5c5503d005b120ac1b401b21ae24f88088</tag>
+    <tag>c69f21b1a30bbc6b4ff027b73a20472377e0d9eb</tag>
   </scm>
   <dependencies>
     <dependency>
       <groupId>applied-science</groupId>
       <artifactId>js-interop</artifactId>
-      <version>0.3.0</version>
+      <version>0.3.1</version>
     </dependency>
     <dependency>
       <groupId>camel-snake-kebab</groupId>
@@ -61,7 +61,7 @@
         <configuration>
           <archive>
             <manifestEntries>
-              <git-revision>e68c4a5c5503d005b120ac1b401b21ae24f88088</git-revision>
+              <git-revision>c69f21b1a30bbc6b4ff027b73a20472377e0d9eb</git-revision>
             </manifestEntries>
           </archive>
         </configuration>
