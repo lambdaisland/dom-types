@@ -2,9 +2,7 @@
 
 ## Added
 
-## Fixed
-
-## Changed
+- Add Blob and File
 
 # 0.0.26 (2021-09-14 / f0e4984)
 
