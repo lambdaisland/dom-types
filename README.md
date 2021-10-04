@@ -39,13 +39,13 @@ This project is a [stamp collection](https://twitter.com/plexus/status/137217954
 To use the latest release, add the following to your `deps.edn` ([Clojure CLI](https://clojure.org/guides/deps_and_cli))
 
 ```
-com.lambdaisland/dom-types {:mvn/version "0.0.26"}
+com.lambdaisland/dom-types {:mvn/version "0.4.29"}
 ```
 
 or add the following to your `project.clj` ([Leiningen](https://leiningen.org/))
 
 ```
-[com.lambdaisland/dom-types "0.0.26"]
+[com.lambdaisland/dom-types "0.4.29"]
 ```
 <!-- /installation -->
 
