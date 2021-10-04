@@ -4,10 +4,6 @@
 
 - Add printers for Blob and File.
 
-## Fixed
-
-## Changed
-
 # 0.0.26 (2021-09-14 / f0e4984)
 
 ## Fixed
