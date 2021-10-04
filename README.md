@@ -30,6 +30,8 @@ These are currently implemented:
 - MouseEvent
 - WheelEvent
 - DragEvent
+- Blob
+- File
 
 This project is a [stamp collection](https://twitter.com/plexus/status/1372179545139335170). Being exhaustive is not a stated goal, but pull requests that add other common built-in types are welcome.
 

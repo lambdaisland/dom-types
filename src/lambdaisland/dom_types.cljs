@@ -81,3 +81,6 @@
 (register-keys-printer js/MouseEvent 'js/MouseEvent mouse-event-keys)
 (register-keys-printer js/WheelEvent 'js/WheelEvent (conj mouse-event-keys :deltaX :deltaY :deltaZ :deltaMode))
 (register-keys-printer js/DragEvent 'js/DragEvent (conj mouse-event-keys :dataTransfer))
+
+(register-keys-printer js/Blob 'js/Blob [:type :size])
+(register-keys-printer js/File 'js/File [:type :size :name :lastModified])
