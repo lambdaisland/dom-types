@@ -53,6 +53,11 @@
 (register-printer js/HTMLDocument 'js/HTMLDocument (fn [^js d] {:root (.-documentElement d)}))
 (register-printer js/XMLDocument 'js/XMLDocument (fn [^js d] {:root (.-documentElement d)}))
 (register-printer js/Document 'js/Document (fn [^js d] {:root (.-documentElement d)}))
+(register-printer js/DOMStringMap 'js/DOMStringMap (fn [^js dataset]
+                                                     (reduce (fn [m k]
+                                                               (assoc m k (j/get dataset k)))
+                                                             {}
+                                                             (js/Object.keys dataset))))
 
 (register-keys-printer js/Window 'js/Window [:location :document :devicePixelRatio :innerWidth :innerHeight])
 
