@@ -1,3 +1,11 @@
+# Unreleased
+
+## Added
+
+## Fixed
+
+## Changed
+
 # 0.6.42 (2023-10-02 / a1f2317)
 
 ## Added
