@@ -1,4 +1,4 @@
 {:paths ["src"]
- :deps  {applied-science/js-interop          {:mvn/version "0.3.3"}
-         camel-snake-kebab/camel-snake-kebab {:mvn/version "0.4.2"}
+ :deps  {applied-science/js-interop          {:mvn/version "0.4.2"}
+         camel-snake-kebab/camel-snake-kebab {:mvn/version "0.4.3"}
          lambdaisland/data-printers          {:mvn/version "0.7.47"}}}
