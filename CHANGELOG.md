@@ -2,6 +2,8 @@
 
 ## Added
 
+- Add printer for DOMStringMap
+
 ## Fixed
 
 ## Changed

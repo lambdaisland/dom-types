@@ -18,6 +18,7 @@ These are currently implemented:
 - HTMLDocument
 - XMLDocument
 - Document
+- DOMStringMap
 - Window
 - Location
 - HTMLCollection
